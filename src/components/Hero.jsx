@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <>
-      <header>
+      <header className="hero">
         <h1>Silverado Media Co.</h1>
       </header>
     </>

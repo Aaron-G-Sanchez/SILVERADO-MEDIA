@@ -1,11 +1,14 @@
 ---
+import About from '../components/About.jsx';
+import Footer from '../components/Footer.jsx';
 import Hero from '../components/Hero.jsx'
+import Portfolio from '../components/Portfolio.jsx';
 
 ---
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <link rel="stylesheet" href="src/styles/globals.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name='generator' content={Astro.generator} />
@@ -14,6 +17,9 @@ import Hero from '../components/Hero.jsx'
   </head>
   <body>
     <Hero />
+    <About/>
+    <Portfolio />
+    <Footer />
   </body>
 
 </html>
