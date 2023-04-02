@@ -25,12 +25,21 @@ body::-webkit-scrollbar {
 /* NAV BAR */
 
 .nav-bar {
-  height: 5vh;
+  height: 8vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px black solid;
   cursor: pointer;
+  position: fixed;
+  top: 0px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 110%;
 }
 
 .nav-items {
@@ -41,35 +50,59 @@ body::-webkit-scrollbar {
   list-style-type: none;
 }
 
-.social-items {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 15%;
-  list-style-type: none;
+.nav-item {
+  transition: .5s;
 }
+
+.nav-item:hover {
+  border-bottom: 1px var(--black) solid;
+}
+
+.active {
+  background-color: var(--black);
+  color: var(--alice-blue);
+  width: 40%;
+}
+
 
 /* HERO SECTION */
 
 .hero {
-  height: 95vh;
-  height: 95svh;
+  height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-title {
-  font-size: 900%;
+  font-size: clamp(200%, 950%, 955%);
+  /* KEEP AN EYE ON THE CLAMP */
   cursor: default;
   font-weight: 900;
-  font-style: italic;
+  /* font-style: italic; */
 }
+
 
 .hero-image {
   height: 80%;
+  width: 75%;
   position: relative;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* SCROLL METER */
+
+.progress {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 3vh;
+  background-color: var(--black);
 }
 
 

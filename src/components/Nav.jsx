@@ -2,11 +2,11 @@ const Nav = () => {
   return (
     <>
       <nav className="nav-bar">
-        <p>SILVERADO MEDIA CO.</p>
+        <p className="title">SILVERADO MEDIA CO.</p>
         <ul className="nav-items">
-          <li>WORK</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+          <li className="nav-item">WORK</li>
+          <li className="nav-item">ABOUT</li>
+          <li className="active">CONTACT</li>
         </ul>
       </nav>
     </>
