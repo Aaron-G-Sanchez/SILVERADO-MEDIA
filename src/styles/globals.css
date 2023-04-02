@@ -36,3 +36,10 @@ body {
   height: 100vh;
   height: 100svh;
 }
+
+
+/* GETTHEREGO CHAT */
+
+.chat-container {
+  position: sticky;
+}
