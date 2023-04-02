@@ -1,9 +1,9 @@
 const Nav = () => {
   return (
     <>
-      <nav>
+      <nav className="nav-bar">
         <p>SILVERADO MEDIA CO.</p>
-        <ul>
+        <ul className="nav-items">
           <li>About</li>
           <li>My Work</li>
           <li>Contact</li>

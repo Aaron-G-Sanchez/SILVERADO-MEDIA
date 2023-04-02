@@ -11,14 +11,33 @@ body {
 }
 
 
+/* NAV BAR */
+
+.nav-bar {
+  height: 5vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+
 /* HERO SECTION */
 
 .hero {
-  height: 100vh;
+  height: 95vh;
   height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: blue;
 }
 
 
