@@ -1,13 +1,24 @@
 /* GENERAL STYLINGS AND RESETS */
 
+:root {
+  --black: #353238;
+  --alice-blue: #DCE1E9;
+}
+
 * {
   margin: 0;
   text-align: center;
 }
 
 body {
-  background-color: ghostwhite;
-  color: salmon;
+  background-color: var(--alice-blue);
+  color: var(--black);
+  font-family: 'Raleway', sans-serif; 
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 
@@ -30,20 +41,35 @@ body {
   list-style-type: none;
 }
 
+.social-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+  list-style-type: none;
+}
 
 /* HERO SECTION */
 
 .hero {
   height: 95vh;
-  height: 100svh;
+  height: 95svh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .hero-title {
-  font-size: 500%;
+  font-size: 900%;
   cursor: default;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.hero-image {
+  height: 80%;
+  position: relative;
 }
 
 
@@ -58,8 +84,8 @@ body {
 /* PORTFOLIO SECTION */
 
 .portfolio {
-  height: 100vh;
-  height: 100svh;
+  height: 200vh;
+  height: 200svh;
 }
 
 
