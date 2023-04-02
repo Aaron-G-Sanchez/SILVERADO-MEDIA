@@ -15,10 +15,11 @@ body {
 
 .nav-bar {
   height: 5vh;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 1px black solid;
+  cursor: pointer;
 }
 
 .nav-items {
@@ -26,6 +27,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 15%;
+  list-style-type: none;
 }
 
 
@@ -37,7 +39,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+}
+
+.hero-title {
+  font-size: 500%;
+  cursor: default;
 }
 
 

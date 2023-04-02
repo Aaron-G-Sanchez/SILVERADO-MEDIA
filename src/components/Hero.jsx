@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <Nav />
       <header className="hero">
-        <h1>Silverado Media Co.</h1>
+        <h1 className="hero-title">Silverado Media Co.</h1>
       </header>
     </>
   )
