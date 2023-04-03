@@ -3,6 +3,7 @@
 :root {
   --black: #353238;
   --alice-blue: #DCE1E9;
+  --red: #D05353;
 }
 
 * {
@@ -46,12 +47,9 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 15%;
+  width: 25%;
+  height: 100%;
   list-style-type: none;
-}
-
-.nav-item {
-  transition: .5s;
 }
 
 .nav-item:hover {
@@ -62,6 +60,14 @@ body::-webkit-scrollbar {
   background-color: var(--black);
   color: var(--alice-blue);
   width: 40%;
+  padding: 5% 0px 5% 0;
+}
+
+.active:hover {
+  border-top: 1px var(--black) solid;
+  border-bottom: 1px var(--black) solid;
+  background-color: var(--alice-blue);
+  color: var(--black);
 }
 
 
@@ -86,14 +92,6 @@ body::-webkit-scrollbar {
 }
 
 
-.hero-image {
-  height: 80%;
-  width: 75%;
-  position: relative;
-  object-fit: cover;
-  object-position: center;
-}
-
 /* SCROLL METER */
 
 .progress {
@@ -101,8 +99,9 @@ body::-webkit-scrollbar {
   bottom: 0px;
   left: 0px;
   right: 0px;
+  height: 3svh;
   height: 3vh;
-  background-color: var(--black);
+  background-color: var(--red);
 }
 
 
@@ -126,4 +125,37 @@ body::-webkit-scrollbar {
 
 .chat-container {
   position: sticky;
+}
+
+
+/* FOOTER SECTION */
+
+.footer {
+  height: 20vh;
+  height: 20svh;
+  margin-bottom: 3vh;
+  margin-bottom: 3svh;
+  background-color: var(--black);
+  color: var(--alice-blue);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.rights {
+  margin: 8% 0 0 5%;
+}
+
+.footer-items {
+  list-style-type: none;
+  margin-right: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-item:hover {
+  cursor: pointer;
 }

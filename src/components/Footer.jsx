@@ -1,14 +1,19 @@
 const Footer = () => {
   return (
     <>
-      <footer>
-        <ul>
-          <li>
-            <a>Linkedid</a>
+      <footer className="footer">
+        <p className="rights">SILVERADO MEDIA CO. ALL RIGHTS RESERVED</p>
+        <ul className="footer-items">
+          <li className="footer-item">
+            <a>LINKEDIN</a>
           </li>
-          <li>
-            <a>Github</a>
+          <li className="footer-item">
+            <a>GITHUB</a>
           </li>
+          <li className="footer-item">
+            <a>INSTAGRAM</a>
+          </li>
+          <li>CONTACT</li>
         </ul>
       </footer>
     </>
