@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <p className="rights">SILVERADO MEDIA CO. ALL RIGHTS RESERVED</p>
+        <p className="rights">SILVERADO MEDIA ALL RIGHTS RESERVED</p>
         <ul className="footer-items">
           <li className="footer-item">
             <a>LINKEDIN</a>
